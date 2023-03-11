@@ -3,10 +3,18 @@
 
 ## Process
 
-### 1.Extract Shap Value
+### 1.Extract Shap Value.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f9839d60-0c59-4fe3-a9f8-6bce6e1f7ae5/Untitled.png)
+
+![Encoder Train](https://user-images.githubusercontent.com/76906638/224451254-f65a65a5-cccc-4de6-98b1-fd0b659ffbf4.png)
+
+![예시](https://user-images.githubusercontent.com/76906638/224451231-486651d0-f161-4beb-9df3-773e04cfdf6a.PNG)
+
+
 
 ### 2.Encoder Hidden state to Cross Attention 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/898ff7bb-a152-49c8-9125-7c75531ca726/Untitled.png)
+![Random_masking](https://user-images.githubusercontent.com/76906638/224451269-d6d783c9-cf98-40f2-974d-f5c6d35ad56a.png)
+
+
+
