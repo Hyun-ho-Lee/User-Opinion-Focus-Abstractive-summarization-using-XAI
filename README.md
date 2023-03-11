@@ -17,23 +17,23 @@ Random Masking Module
 
     def random_masking(attn_mask,percent):
     
-    attn_mask = attn_mask.detach().cpu()
+        attn_mask = attn_mask.detach().cpu()
 
-    consecutive_zeros = []
-    for i in range(attn_mask.size()[0]):
-        nonzero_indices = np.where(attn_mask[i]==0)[0]
-        runs = np.split(nonzero_indices, np.where(np.diff(nonzero_indices)!=1)[0]+1)
-        if len(runs)>0:
-            consecutive_zeros.append(runs)
+        consecutive_zeros = []
+        for i in range(attn_mask.size()[0]):
+            nonzero_indices = np.where(attn_mask[i]==0)[0]
+            runs = np.split(nonzero_indices, np.where(np.diff(nonzero_indices)!=1)[0]+1)
+            if len(runs)>0:
+                consecutive_zeros.append(runs)
 
-    for i in range(attn_mask.size()[0]):
-        idx = np.random.choice(np.arange(np.prod(attn_mask[i][:consecutive_zeros[i][-1][0]].shape)), 
-                                size=int(np.prod(attn_mask[i][:consecutive_zeros[i][-1][0]].shape) * percent),
-                                replace=False)
-        attn_mask[i, idx] = 1 
-        
-        
-    return attn_mask.to(device)
+        for i in range(attn_mask.size()[0]):
+            idx = np.random.choice(np.arange(np.prod(attn_mask[i][:consecutive_zeros[i][-1][0]].shape)), 
+                                    size=int(np.prod(attn_mask[i][:consecutive_zeros[i][-1][0]].shape) * percent),
+                                    replace=False)
+            attn_mask[i, idx] = 1 
+
+
+        return attn_mask.to(device)
 
 
 
