@@ -10,7 +10,7 @@
 
 ### 2.Encoder Hidden state to Cross Attention 
 
-<img src="https://user-images.githubusercontent.com/76906638/224451269-d6d783c9-cf98-40f2-974d-f5c6d35ad56a.png" width="700" height="400"/>
+<img src="https://user-images.githubusercontent.com/76906638/224451269-d6d783c9-cf98-40f2-974d-f5c6d35ad56a.png" width="600" height="600"/>
 
 
 Random Masking Module 
