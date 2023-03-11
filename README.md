@@ -6,10 +6,9 @@
 ### 1.Extract Shap Value.
 
 
-![Encoder Train](https://user-images.githubusercontent.com/76906638/224451254-f65a65a5-cccc-4de6-98b1-fd0b659ffbf4.png)
+<img src="https://user-images.githubusercontent.com/76906638/224451254-f65a65a5-cccc-4de6-98b1-fd0b659ffbf4.png" width="200" height="400"/>
 
-![예시](https://user-images.githubusercontent.com/76906638/224451231-486651d0-f161-4beb-9df3-773e04cfdf6a.PNG)
-
+<img src="https://user-images.githubusercontent.com/76906638/224451231-486651d0-f161-4beb-9df3-773e04cfdf6a.PNG)" width="200" height="400"/>
 
 
 ### 2.Encoder Hidden state to Cross Attention 
